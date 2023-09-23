@@ -20,6 +20,7 @@ export const projects = [
         icon: iconUrl + 'css3/css3-plain.svg',
       },
     ],
+    hasReadme: false,
   },
   {
     name: 'Vopenheimer',
@@ -32,6 +33,7 @@ export const projects = [
         icon: iconUrl + 'python/python-plain.svg',
       },
     ],
+    hasReadme: true,
   },
   {
     name: 'Portfolio',
@@ -50,5 +52,29 @@ export const projects = [
         icon: iconUrl + 'css3/css3-plain.svg',
       },
     ],
+    hasReadme: true,
+  },
+  {
+    name: 'Info Reaper',
+    description: 'Free infos from the selected pc!',
+    link: 'https://github.com/Exlion823/Info-Reaper',
+    languages: [
+      {
+        name: 'Python',
+        icon: iconUrl + 'python/python-plain.svg',
+      },
+    ],
+    hasReadme: true,
+  },
+  {
+    name: 'Vmusic',
+    link: 'https://github.com/Vbuuu/vmusic',
+    languages: [
+      {
+        name: 'Python',
+        icon: iconUrl + 'python/python-plain.svg',
+      },
+    ],
+    hasReadme: false,
   },
 ];

@@ -7,9 +7,15 @@ const { name, description, link, languages } = Astro.props;
 <div class='projectContainer'>
   <div class='projectNameContainer'>
     <img src={linkIcon.src} alt='' width='24' height='24' />
-    <a class='projectName' href={link} target='_blank'>{name}</a>
+    <a class='projectName' href={link}>{name}</a>
   </div>
-  <p>{description}</p>
+  <p>
+    {
+      typeof description !== 'undefined'
+        ? description
+        : 'No description, website, or topics provided. '
+    }
+  </p>
   <ul class='projectLanguagesList'>
     {
       languages.map((language) => (
