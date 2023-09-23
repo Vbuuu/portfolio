@@ -1,0 +1,57 @@
+:root {
+  --background-color: #0f111a;
+}
+
+.projectLanguagesList {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-direction: row;
+  list-style: none;
+}
+
+.projectLanguagesItem {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+.projectContainer {
+  display: grid;
+  gap: 1rem;
+  background-color: #090b10;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 12px;
+}
+
+.projectContainer:hover {
+  animation: glowingAnimation 2.5s infinite;
+}
+
+.projectNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.projectName {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@keyframes glowingAnimation {
+  0% {
+    box-shadow: rgba(128, 203, 196, 0.1) 0px 0px 22px;
+  }
+  50% {
+    box-shadow: rgba(128, 203, 196, 0.1) 0px 0px 11px;
+  }
+  100% {
+    box-shadow: rgba(128, 203, 196, 0.1) 0px 0px 22px;
+  }
+}

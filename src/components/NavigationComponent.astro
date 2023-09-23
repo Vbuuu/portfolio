@@ -1,0 +1,30 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class='navigationBar'>
+  <ul class='navigationItemList'>
+    <li>
+      <a
+        href='/'
+        class={'navItem' + (currentPath === '/' ? ' navItemSelected' : '')}
+        >About
+      </a>
+    </li>
+    <li>
+      <a
+        href='/blog'
+        class={'navItem' +
+          (currentPath.startsWith('/blog') ? ' navItemSelected' : '')}
+        >Blog
+      </a>
+    </li>
+    <li>
+      <a
+        href='/work'
+        class={'navItem' + (currentPath === '/work' ? ' navItemSelected' : '')}
+        >My Work
+      </a>
+    </li>
+  </ul>
+</nav>

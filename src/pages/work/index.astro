@@ -1,0 +1,21 @@
+---
+import '../../styles/global.css';
+import '../../styles/projectComponent.css';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectComponent from '../../components/ProjectComponent.astro';
+
+import { projects } from '../../data';
+---
+
+<BaseLayout title='My work'>
+  {
+    projects.map((project) => (
+      <ProjectComponent
+        name={project.name}
+        description={project.description}
+        link={project.link}
+        languages={project.languages}
+      />
+    ))
+  }
+</BaseLayout>

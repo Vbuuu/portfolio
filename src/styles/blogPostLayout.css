@@ -1,0 +1,24 @@
+.blogPostContainer {
+  margin: 12px;
+}
+
+.blogPostTitle {
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+
+.infoText {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #3c3d41;
+}
+
+.blogPostContainer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.blogPostContainer h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}

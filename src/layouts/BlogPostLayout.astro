@@ -1,0 +1,18 @@
+---
+import '../styles/blogPostLayout.css';
+import BaseLayout from './BaseLayout.astro';
+import BreadcrumbComponent from '../components/BreadcrumbComponent.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title}>
+  <BreadcrumbComponent />
+  <div class='blogPostContainer'>
+    <h1 class='blogPostTitle'>{frontmatter.title}</h1>
+    <p class='infoText'>{frontmatter.author} • {frontmatter.pubDate}</p>
+    <article>
+      <slot />
+    </article>
+  </div>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+const { title } = Astro.props;
+
+import '../styles/global.css';
+import '../styles/baseLayout.css';
+
+import NavigationComponent from '../components/NavigationComponent.astro';
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='theme-color' content='#80cbc4' />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class='containerBase'>
+    <header class='header'>
+      <NavigationComponent />
+    </header>
+    <main>
+      <slot>
+        <div style='display: grid; justify-content: center;'>
+          <h1>Comming soon!</h1>
+        </div>
+      </slot>
+    </main>
+    <footer></footer>
+  </body>
+</html>

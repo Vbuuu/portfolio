@@ -1,0 +1,43 @@
+:root {
+  --text-color-base: #4b524f;
+  --accent-color: #80cbc4;
+}
+
+/*navigation*/
+.navigationBar {
+  display: grid;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.navItemSelected {
+  color: var(--accent-color) !important;
+  background-clip: content-box;
+  text-shadow: rgba(128, 203, 196, 0.9) 0px 0px 22px;
+}
+
+.navItem {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color-base);
+}
+
+.navigationItemList {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+/*other stuff*/
+.containerBase {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 672px;
+  padding: 1rem;
+}

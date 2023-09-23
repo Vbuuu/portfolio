@@ -1,0 +1,28 @@
+---
+import linkIcon from '../images/icons/link.svg';
+
+const { name, description, link, languages } = Astro.props;
+---
+
+<div class='projectContainer'>
+  <div class='projectNameContainer'>
+    <img src={linkIcon.src} alt='' width='24' height='24' />
+    <a class='projectName' href={link} target='_blank'>{name}</a>
+  </div>
+  <p>{description}</p>
+  <ul class='projectLanguagesList'>
+    {
+      languages.map((language) => (
+        <li class='projectLanguagesItem'>
+          {typeof language.icon !== 'undefined' ? (
+            <img src={language.icon} width='24' height='24' alt='' />
+          ) : (
+            ''
+          )}
+
+          <p>{language.name}</p>
+        </li>
+      ))
+    }
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+---
+import '../styles/BreadcrumbComponent.css';
+const currentPath = Astro.url.pathname;
+---
+
+<ol class='breadcrumbList'>
+  {
+    currentPath
+      .substring(1)
+      .split('/')
+      .map((text, index) =>
+        currentPath.substring(1).split('/').length - 1 === index ? (
+          <li class='breadcrumbsItem'>{text}</li>
+        ) : (
+          <a class='breadcrumbsItem' href={`/${text}`}>
+            {text}
+          </a>
+        )
+      )
+  }
+</ol>

@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import meImage from '../images/87385391.webp';
+---
+
+<BaseLayout title='Home'>
+  <img
+    ondragstart='
+    return false;
+    '
+    class='roundedImage'
+    src={meImage.src}
+    alt='notme'
+    width='200'
+    height='200'
+    decoding='async'
+  />
+  <h1 class='accentHeaderOneText'>Hallo</h1>
+  <p class='selectedAccent'>
+    Mein Name ist Max und ich liebe es zu Programmieren. Gerade lebe ich in
+    Deutschland, wo ich noch zur Schule gehe.
+  </p>
+</BaseLayout>

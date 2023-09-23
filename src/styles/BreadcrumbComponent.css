@@ -1,0 +1,32 @@
+:root {
+  --text-color: #d9dbe9;
+  --accent-color: #80cbc4;
+}
+
+.accentText {
+  color: var(--accent-color);
+}
+
+.breadcrumbList {
+  margin-bottom: 2rem;
+}
+
+.breadcrumbsItem {
+  display: inline;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.breadcrumbsItem::after {
+  content: '/';
+  margin: 0 0.5rem;
+  color: var(--text-color);
+}
+
+.breadcrumbsItem:last-child {
+  color: gainsboro;
+}
+
+.breadcrumbsItem:last-child::after {
+  content: '';
+}
