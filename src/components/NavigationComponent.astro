@@ -22,7 +22,8 @@ const currentPath = Astro.url.pathname;
     <li>
       <a
         href='/work'
-        class={'navItem' + (currentPath === '/work' ? ' navItemSelected' : '')}
+        class={'navItem' +
+          (currentPath.startsWith('/work') ? ' navItemSelected' : '')}
         >My Work
       </a>
     </li>
