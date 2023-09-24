@@ -7,7 +7,7 @@ const { name, description, link, languages } = Astro.props;
 <div class='projectContainer'>
   <div class='projectNameContainer'>
     <img src={linkIcon.src} alt='' width='24' height='24' />
-    <a class='projectName' href={link}>{name}</a>
+    <a class='projectName' href={link} target='_blank'>{name}</a>
   </div>
   <p>
     {
