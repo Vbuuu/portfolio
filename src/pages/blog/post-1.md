@@ -1,8 +1,9 @@
 ---
 layout: '../../layouts/BlogPostLayout.astro'
 title: 'Mein erster Blogpost'
+description: 'Willkommen auf meiner Portfolio-Website! Hier könnt ihr verfolgen, wie ich gestern mein spannendes Projekt begonnen habe.'
 author: 'Max'
-pubDate: '20 Dez, 2023'
+pubDate: '22 Sep, 2023'
 ---
 
 Gestern habe ich mit diesem Projekt angefangen, da ich eine Aufgabe in Mathe-Informatik bekommen habe. Die Aufgabe war es, eine Website zu programmieren.
