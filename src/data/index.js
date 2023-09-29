@@ -77,4 +77,15 @@ export const projects = [
     ],
     hasReadme: false,
   },
+  {
+    name: 'Lumina Api',
+    link: 'https://github.com/Vbuuu/LuminaApi',
+    languages: [
+      {
+        name: 'Java',
+        icon: iconUrl + 'java/java-plain.svg'
+      },
+    ],
+    hasReadme: false,
+  },
 ];
