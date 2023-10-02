@@ -88,4 +88,14 @@ export const projects = [
     ],
     hasReadme: false,
   },
+  {
+    name: 'Python Hangman',
+    link: 'https://github.com/Vbuuu/python-hangman',
+    languages: [
+      {
+        name: 'Python',
+        icon: iconUrl + 'python/python-plain.svg'
+      },
+    ],
+  },
 ];
