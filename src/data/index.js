@@ -82,8 +82,8 @@ export const projects = [
     link: 'https://github.com/Vbuuu/LuminaApi',
     languages: [
       {
-        name: 'Java',
-        icon: iconUrl + 'java/java-plain.svg'
+        name: 'Typescript',
+        icon: iconUrl + 'typescript/typescript-plain.svg'
       },
     ],
     hasReadme: false,
