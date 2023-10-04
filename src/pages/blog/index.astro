@@ -1,6 +1,62 @@
 ---
 import '../../styles/global.css';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = await Astro.glob('./*.md');
 ---
 
-<BaseLayout title='Blog' />
+<style>
+  .blogList {
+    list-style: none;
+  }
+
+  .spacer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-color: gray;
+  }
+
+  .blogPostTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #80cbc4;
+  }
+
+  .blogPostContainer {
+    text-decoration: none;
+  }
+
+  .blogPostDate {
+    color: #3c3d41;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blogPostDescription {
+    font-size: 1.25rem;
+    color: #3c3d41;
+  }
+</style>
+
+<BaseLayout title='Blog'>
+  <ul class='blogList'>
+    {
+      posts.map((post) => (
+        <>
+          <li>
+            <a class='blogPostContainer' href={post.url}>
+              <article>
+                <h2 class='blogPostTitle'>{post.frontmatter.title}</h2>
+                <p class='blogPostDate'>{post.frontmatter.pubDate}</p>
+                <p class='blogPostDescription'>
+                  {post.frontmatter.description}
+                </p>
+              </article>
+            </a>
+            <hr class='spacer' />
+          </li>
+        </>
+      ))
+    }
+  </ul>
+</BaseLayout>

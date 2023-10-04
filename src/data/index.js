@@ -83,7 +83,7 @@ export const projects = [
     languages: [
       {
         name: 'Typescript',
-        icon: iconUrl + 'typescript/typescript-plain.svg'
+        icon: iconUrl + 'typescript/typescript-plain.svg',
       },
     ],
     hasReadme: false,
@@ -91,11 +91,13 @@ export const projects = [
   {
     name: 'Python Hangman',
     link: 'https://github.com/Vbuuu/python-hangman',
+    description: 'A simple python hangman game with no extra dependencies.',
     languages: [
       {
         name: 'Python',
-        icon: iconUrl + 'python/python-plain.svg'
+        icon: iconUrl + 'python/python-plain.svg',
       },
     ],
+    hasReadme: false,
   },
 ];
