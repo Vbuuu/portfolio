@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPostLayout.astro'
 title: 'OpenGL in C++'
 description: 'Heute werde ich über meinen fortschritt in OpenGL schreiben. Das Projekt habe ich nur angefangen, da mir langweilig war'
 author: 'Max'
-pubDate: '30 Okt, 2023'
+pubDate: '30 Oct, 2023'
 ---
 
 Heute war mir langweilig und ich habe mir eine Challenge gesetzt, eine Render-Engine zu programmieren.
