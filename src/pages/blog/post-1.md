@@ -7,7 +7,7 @@ pubDate: '22 Sep, 2023'
 ---
 
 Gestern habe ich mit diesem Projekt angefangen, da ich eine Aufgabe in Mathe-Informatik bekommen habe. Die Aufgabe war es, eine Website zu programmieren.
-Diese Website sollte Bilder, Links, CSS, Javascript enthalten sollte.
+Diese Website sollte Bilder, Links, CSS und Javascript enthalten.
 Ich habe mich entschieden, diese Website mit [Astro](https://astro.build) zu bauen.
 
 ## Was ist Astro
